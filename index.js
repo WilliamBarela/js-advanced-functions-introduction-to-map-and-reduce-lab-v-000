@@ -4,6 +4,7 @@ const mapMod = (arr, mod) => {
   const modArr = [];
   
   for(const elem of arr){
+<<<<<<< HEAD
     modArr.push(elem * mod);
   }
   
@@ -58,3 +59,23 @@ const reduceToAnyTrue = (arr) => {
   }
   return false;
 }
+=======
+    modArr.push(elem * mod)
+  }
+  
+  return modArr; 
+}
+
+const mapToNegativize = (arr) => {
+  return mapMod(arr, -1);
+}
+
+const mapToNochange = (arr) => {
+  return arr;
+}
+
+const mapToDouble = (arr) => {
+  return mapMod(arr, 2);
+}
+
+>>>>>>> b925a97dfcf8a258eb0c49332c2346bc42a300a4
